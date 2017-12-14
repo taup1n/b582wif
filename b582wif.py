@@ -7,7 +7,7 @@
 import sys, base58, hashlib, binascii, os.path
 
 def b2h(bytestr):
-    return ''.join(["%02x" % ord(x) for x in bytestr]).strip()
+	return ''.join(["%02x" % ord(x) for x in bytestr]).strip()
 
 if len(sys.argv) < 2:
 	sys.exit("usage: " + sys.argv[0] + " filename")
